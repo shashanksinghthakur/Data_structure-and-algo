@@ -6,5 +6,8 @@ def maxSubArraySum(self,arr,N):
             max_c=max(arr[i], max_c+arr[i])
             if max_c > max_g:
                 max_g=max_c
-                
-        return max_g;
+         
+        if max_g>=0:
+            return max_g;
+        else:
+            return 0;
